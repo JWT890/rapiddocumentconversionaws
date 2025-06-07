@@ -36,4 +36,11 @@ Second step is to create the S3 Buckets for input/upload and the output bucket. 
 Name the input/upload bucket as input.bucket.1documents and the output bucket as output.1.bucketdocuments.  
 ![image](https://github.com/user-attachments/assets/f79b26bb-b67e-46f2-9320-7444fe48608f)
 
+Third step is to head over to Lambda and create a function. Click on create function and name the function convert_documents. Next click on the drop down arrow for change default execution role.  
+For execution role, click on use an existing role and choose the role you created in the first step, should look like this:  
+![image](https://github.com/user-attachments/assets/74cdc449-ecff-4d63-82e5-15943040b98a)  
+Then create the function which should take you here:  
+![image](https://github.com/user-attachments/assets/2f74d40d-051e-4d2b-8989-7e0cb6d32706)  
+
+
 
