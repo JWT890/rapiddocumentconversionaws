@@ -10,23 +10,23 @@ First step is to create a role in IAM: head to access management -> roles then c
 For use case choose Lambda, skip the permissions for now, and name the role lambda-s3-execution-role.  
 Next click on the role and click on add permissions and click on add inline policy, chose lambda and switch to JSON.  
 Delete the code their and paste this code: 
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": ["s3:GetObject", "s3:PutObject"],
-      "Resource": [
-        "arn:aws:s3:::document-upload-bucket/*",
-        "arn:aws:s3:::document-output-bucket/*"
-      ]
-    },
-    {
-      "Effect": "Allow",
-      "Action": ["logs:*"],
-      "Resource": "*"
-    }
-  ]
-}
+{    
+  "Version": "2012-10-17",  
+  "Statement": [  
+    {  
+      "Effect": "Allow",  
+      "Action": ["s3:GetObject", "s3:PutObject"],  
+      "Resource": [  
+        "arn:aws:s3:::document-upload-bucket/*",  
+        "arn:aws:s3:::document-output-bucket/*"  
+      ]  
+    },  
+    {  
+      "Effect": "Allow",  
+      "Action": ["logs:*"],  
+      "Resource": "*"  
+    }  
+  ]  
+}  
 
 
