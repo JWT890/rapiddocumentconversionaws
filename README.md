@@ -42,5 +42,6 @@ For execution role, click on use an existing role and choose the role you create
 Then create the function which should take you here:  
 ![image](https://github.com/user-attachments/assets/2f74d40d-051e-4d2b-8989-7e0cb6d32706)  
 
+Next select the create a trigger and choose S3 as the source and the bucket as the input bucket and click add
 
 
